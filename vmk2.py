@@ -69,31 +69,14 @@ banner = """
 \033[1;91m➣ Youtube : 👉https://www.youtube.com/channel/UCpfLeE7qhqT73fQ9DQz9O5g👈
 \033[1;91m➣ WhatsApp: +923214598890
 \033[1;97m-----------------------------------------------"""
-##### Login Method #####
+# titik #
+def tik():
+	titik = [".   ","..  ","... "]
+	for o in titik:
+		print("\r[✔] Logging In "+o),;sys.stdout.flush();time.sleep(1)
 
-
-def methodlogin():
-	os.system('clear')
-	print banner
-	print "[1] Login With ID/Password."
-	print "[2] Login Using Token."
-	print "[3] Exit."
-	print ('      ')
-	hos = raw_input("\nChoose Option >>  ")
-	if hos =="":
-		print"[!]  Wrong Input"
-		exit()
-	elif hos =="1":
-		login()
-	elif hos =="2":
-		os.system('clear')
-		print banner
-		hosp = raw_input("[+] Give Token : ")
-		tik()
-		hopa = open('login.txt','w')
-		hopa.write(hosp)
-		hopa.close()
-		print "\n[✓] Logged In Successfully."
+back = 0
+id = []
 
 back = 0
 threads = []
